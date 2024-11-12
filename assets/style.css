@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+nav h1{
+    color: white;
+    font-size: 1rem;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+header li {
+    list-style-type: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 100%;
+    width: 95%;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 48%;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border: 0.15rem solid white;
+    border-radius: 0.5rem;
+    box-shadow: 10px 20px 50px rgb(54, 54, 54);
+}
+
+hr{
+    height: 100%;
+}
+
+span{
+    color: violet;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ladoEsquerdo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ladoEsquerdo li{
+    font-size: 1rem;
+}
+
+.ladoDireito{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ladoDireito li{
+    font-size: 1rem;
+}
+
+.textAbout{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.textAbout h1 {
+    color: white;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.buttonRegister,
+.buttonLogin {
+    background-color: #BB6BE3;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttonRegister:hover,
+.buttonLogin:hover {
+    background-color: #9157ad;
+    box-shadow: 5px 10px 10px rgb(54, 54, 54);
+}
+
+@media only screen and (max-width: 878px){
+    .textAbout h1 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .textAbout p {
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: .3rem;
+    }
+    .buttonRegister,
+    .buttonLogin {
+        background-color: #BB6BE3;
+        padding: .5rem 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .buttonRegister:hover,
+    .buttonLogin:hover {
+        background-color: #9157ad;
+        box-shadow: 5px 10px 10px rgb(54, 54, 54);
+    }
+}
