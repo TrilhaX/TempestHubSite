@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2b282c;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1,h2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Jacques Francois Shadow', Courier, monospace;
+}
+
+h2{
+    font-size: 3rem;
+    border: none;
+    background-color: #BB6BE3;
+    width: 20%;
+    border-radius: .5rem;
+    font-family: 'Inknut Antiqua', Courier, monospace;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+form input{
+    padding:.5rem 1rem;
+    background-color: #EDEDED;
+    border: .15rem solid #BB6BE3;
+    border-radius:.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease;
+}
+
+form button{
+    padding:.5rem 1rem;
+    background-color: #BB6BE3;
+    color: white;
+    border: none;
+    border-radius:.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+form button:hover{
+    background-color: #9157ad;
+    transform: scale(1.05);
+}
+
+form span{
+    color: rgb(44, 44, 250);
+    text-decoration: none;
+}
+
+a{
+    text-decoration: underline;
+    color: white;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;    
+    gap:  3rem;
+}
+
+.texto1{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 750px){
+    body {
+        background-color: #2b282c;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;    
+        gap:  1.5rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        text-align: center;
+    }
+}
