@@ -116,7 +116,6 @@ a{
 @media only screen and (max-width: 750px){
     body {
         background-color: #2b282c;
-        height: 100vh;
         overflow-x: hidden;
     }
     main {
@@ -124,10 +123,30 @@ a{
         flex-direction: column;
         height: 100%;
     }
+    h1{
+        font-size: 2rem;
+        font-family: 'Jacques Francois Shadow', Courier, monospace;
+    }
+    
+    h2{
+        font-size: 1rem;
+        border: none;
+        background-color: #BB6BE3;
+        width: 20%;
+        border-radius: .5rem;
+        font-family: 'Inknut Antiqua', Courier, monospace;
+    }
+    .section1{
+        height: 45%;
+    }
     .section2 {
         display: flex;
-        flex-direction: column;    
-        gap:  1.5rem;
+        flex-direction: column;
+        gap:  .5rem;
+    }
+    section img {
+        width: 100%;
+        object-fit: cover;
     }
     form{
         display: flex;
