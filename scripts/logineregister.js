@@ -1,6 +1,10 @@
 let users = JSON.parse(localStorage.getItem('users')) || [];
 let loggedInUser = JSON.parse(sessionStorage.getItem('loggedInUser')) || [];
 
+function generateUniqueId() {
+    return 'user_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
+}
+
 function register(event) {
     event.preventDefault();
     let erroMensagem = document.getElementById('erroMensagem');
@@ -21,7 +25,8 @@ function register(event) {
                 const user = {
                     username: username,
                     email: email,
-                    password: btoa(password)
+                    password: btoa(password),
+                    id: generateUniqueId()
                 };
 
                 users.push(user);

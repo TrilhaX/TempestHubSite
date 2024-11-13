@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+nav h1 {
+    color: white;
+    font-size: 1rem;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+header li {
+    list-style-type: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 3rem 5rem 2rem 5rem;
+}
+
+section {
+    color: white;
+    border: .1rem solid transparent;
+    width: 100%;
+    padding: 2rem;
+}
+
+hr {
+    height: 100%;
+}
+
+span {
+    color: black;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.ladoEsquerdo, .ladoDireito {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ladoEsquerdo li, .ladoDireito li {
+    font-size: 1rem;
+}
+
+.ALS {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card {
+    width: calc(33.333% - 20px);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 70%;
+    height: 20%;
+    object-fit: cover;
+    border: none;
+    border-radius: .5rem;
+}
+
+
+.card h3 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.card p {
+    padding: 0 10px 10px;
+    font-size: 15px;
+    color: #000000;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 878px) {
+    header ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .ALS {
+        gap: 15px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    header li {
+        font-size: .8rem;
+    }
+
+    .ladoEsquerdo h1, .ladoEsquerdo li, .ladoDireito li {
+        font-size: .8rem;
+    }
+
+    .ALS {
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    header ul {
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .ladoEsquerdo, .ladoDireito {
+        gap: .5rem;
+        flex-direction: row;
+    }
+}
