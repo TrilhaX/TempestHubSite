@@ -72,7 +72,7 @@ span {
 }
 
 .card p span{
-    color: black;
+    color: white;
     font-size: 20px;
 }
 
@@ -94,6 +94,7 @@ a {
 
 .ALS {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
@@ -104,20 +105,23 @@ a {
 
 .card {
     width: calc(33.333% - 20px);
-    background-color: white;
+    background-color: rgb(99, 99, 99);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card img {
-    width: 70%;
-    height: 20%;
-    object-fit: cover;
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
     border: none;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -125,17 +129,18 @@ a {
     padding: 10px;
     font-size: 18px;
     font-weight: 600;
-    color: #333;
+    color: white;
 }
 
 .card p {
-    padding: 0 10px 10px;
+    padding: 10px 10px 10px;
     font-size: 15px;
-    color: #000000;
+    color: white;
 }
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 0 10px 10px rgb(173, 172, 172);
 }
 
 @media only screen and (max-width: 878px) {
