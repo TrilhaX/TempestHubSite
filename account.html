@@ -14,9 +14,7 @@
     <header>
         <nav>
             <div class="ladoEsquerdo">
-                <h1>
-                    <span>Tempest</span> Hub
-                </h1>
+                <h1><span>Tempest</span> Hub</h1>
                 <hr>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -33,20 +31,36 @@
     </header>
     <main>
         <section>
-            <h1>
-                Account
-            </h1>
-            <div class="infoAccount">
-                <h2>
-                    Username: <br><span id="spanUsername"></span>
-                 </h2>
-                 <h2>
-                    Email: <br><span id="spanEmail"></span>
-                 </h2>
-                 <h2>
-                    Senha: <br><span id="spanSenha"></span>
-                 </h2>
+            <div class="selectMenu">
+                <h1>
+                    Account Settings
+                </h1>
+                <hr id="hrSettings">
+            </div>
+            <div class="accountInfo">
+                <h1 id="accountText">Account</h1>
+                <div class="username">
+                    <h2>Username:</h2>
+                    <div class="usernameDiv">
+                        <input type="text" id="usernameText" disabled>
+                        <button id="usernameButton">Change Username</button>
+                    </div>
                 </div>
+                <div class="email">
+                    <h2>Email:</h2>
+                    <div class="emailDiv">
+                        <input type="email" id="emailText" disabled>
+                        <button id="emailButton">Change Email</button>
+                    </div>
+                </div>
+                <div class="password">
+                    <h2>Password: <br><span id="spanSenha"></span></h2>
+                    <div class="passwordDiv">
+                        <input type="password" id="passwordText" disabled>
+                        <button id="passwordButton">Change Password</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
