@@ -96,8 +96,8 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 2rem;

@@ -79,6 +79,7 @@ form button{
 form button:hover{
     background-color: #9157ad;
     transform: scale(1.05);
+    box-shadow: 0 0 20px white
 }
 
 form span{
@@ -110,6 +111,12 @@ a{
 .inputs{
     display: flex;
     flex-direction: column;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+input:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px white;
 }
 
 @media only screen and (max-width: 1050px){

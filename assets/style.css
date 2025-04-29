@@ -152,7 +152,7 @@ a {
     padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
     border-radius: 0.5rem;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -160,6 +160,18 @@ a {
 .buttonLogin:hover {
     background-color: #9157ad;
     box-shadow: 5px 10px 10px rgb(54, 54, 54);
+    transform: scale(1.1);
+}
+
+.background-container img{
+    border: none;
+    box-shadow: 0 0 0;
+    transition: transform 0.3s ease-in;
+}
+
+.background-container img:hover{
+    box-shadow: 0 0 40px white;
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 878px){
